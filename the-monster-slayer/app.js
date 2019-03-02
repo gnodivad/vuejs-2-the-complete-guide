@@ -32,7 +32,11 @@ new Vue({
             this.monsterAttacks();
         },
 
-        heal: function() {},
+        heal: function() {
+            this.playerHealth = Math.min(100, (this.playerHealth += 10));
+
+            this.monsterAttacks();
+        },
 
         giveUp: function() {},
 
