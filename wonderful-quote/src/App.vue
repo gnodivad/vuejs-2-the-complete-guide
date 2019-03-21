@@ -4,7 +4,12 @@
 
 <script>
 export default {
-    data: {},
+    data: function() {
+        return {
+            quotes: ["Just a Quote to see something"],
+            maxQuotes: 10,
+        };
+    },
 };
 </script>
 
