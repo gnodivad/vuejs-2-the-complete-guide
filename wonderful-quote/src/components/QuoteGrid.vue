@@ -19,7 +19,6 @@ export default {
     },
     methods: {
         deleteQuote(index) {
-            console.log(index);
             this.$emit("quoteDeleted", index);
         },
     },
