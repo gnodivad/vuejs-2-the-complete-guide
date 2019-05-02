@@ -11,12 +11,15 @@
             {{ fruit }}
           </li>
         </ul>
+        <hr />
+        <app-list></app-list>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import List from "./List.vue";
 export default {
   data() {
     return {
@@ -36,6 +39,9 @@ export default {
         return fruit.match(this.filterText);
       });
     }
+  },
+  components: {
+    appList: List
   }
 };
 </script>
